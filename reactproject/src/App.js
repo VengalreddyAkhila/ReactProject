@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import WidgetDetail from "./pages/WidgetDetails";
+import WidgetsList from "./pages/WidgetList";
+import ComponentsList from './pages/ComponentsList'
+import Error from "./pages/error";
+import WidgetEditPage from "./pages/editWidget";
 
-function App() {
+const Apps = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Router>
+      <Routes>
+       <Route  path="/" element={<WidgetsList/>} />
+       <Route path="/widgets/:id" element={<WidgetDetail />} />
+      <Route path="/widgets/create" element={<WidgetEditPage/>} />
+      <Route path="/widgets/edit" element={<WidgetEditPage/>} />
+      <Route path="/components" element={<ComponentsList/>} />
+      <Route path="/error" element={<Error/>} />
+      </Routes>
+    </Router>
 
-export default App;
+   
+   
+  );
+};
+
+export default Apps;

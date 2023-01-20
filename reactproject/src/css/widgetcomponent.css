@@ -1,0 +1,27 @@
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-right: 10px;
+  }
+  .header-component{
+    font-size:20px;
+    color:blue;
+    margin:20px;
+}
+button{
+    background-color:blue;
+    color:white;
+    border-radius:5px;
+    padding:5px;
+    margin:5px;
+}
+  

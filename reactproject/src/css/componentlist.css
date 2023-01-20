@@ -1,0 +1,28 @@
+.components-list  {
+        width: 80%;
+        margin: 0 auto;
+      }
+      
+      .components-list h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .components-list  p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      
+      .components-list  button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 1rem;
+      }
+    
+  
